@@ -55,5 +55,9 @@ int main()
 
 	cout << "#" << endl;
 	cout << maxAnimalCountIndex + 1 << endl;
+	cout << "#" << endl;
+	cout << "#" << endl; 
+	cout << "#" << endl;
+	cout << "#" << endl;
 	return 0;
 }
