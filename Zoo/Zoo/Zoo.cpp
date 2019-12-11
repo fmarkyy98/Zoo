@@ -34,5 +34,26 @@ int main()
 		zoos[zooIndex - 1].animalCount += animalCount;
 	}
 
+	int maxAnimalCount = zoos[0].animalCount;
+	int maxAnimalCountIndex = 0;
+	for (int i = 1; i < n; ++i)
+	{
+		if (zoos[i].animalCount > maxAnimalCount)
+		{
+			maxAnimalCount = zoos[i].animalCount;
+			maxAnimalCountIndex = i;
+		}
+	}
+
+
+
+
+
+
+
+
+
+	cout << "#" << endl;
+	cout << maxAnimalCountIndex + 1 << endl;
 	return 0;
 }
