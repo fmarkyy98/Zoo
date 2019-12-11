@@ -26,7 +26,7 @@ int main()
 {
 	cin >> n >> m >> k;
 
-	for (int i = 0; i < n; ++i)
+	for (int i = 0; i < k; ++i)
 	{
 		int zooIndex, animalIndex, animalCount;
 		cin >> zooIndex >> animalIndex >> animalCount;
@@ -34,9 +34,9 @@ int main()
 		zoos[zooIndex - 1].animalCount += animalCount;
 	}
 
-	int maxAnimalCount = zoos[0].animalCount;
+	int maxAnimalCount = -1;
 	int maxAnimalCountIndex = 0;
-	for (int i = 1; i < n; ++i)
+	for (int i = 0; i < n; ++i)
 	{
 		if (zoos[i].animalCount > maxAnimalCount)
 		{
